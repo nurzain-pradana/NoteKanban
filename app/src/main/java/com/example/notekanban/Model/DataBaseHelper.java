@@ -18,7 +18,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String sqlNote = "create table note(id_note integer primary key autoincrement, title text, descri text);";
         db.execSQL(sqlNote);
-        String sqlAccount = "create table account(id integer primary key autoincrement, username text, password text, no_phone String);";
+        String sqlAccount = "create table account(id integer primary key autoincrement, username text, password text, no_phone String, photo blob);";
         db.execSQL(sqlAccount);
         String  sqlCategory = "create table category(id integer primary key autoincrement, hexa integer);";
         db.execSQL(sqlCategory);

@@ -1,6 +1,7 @@
 package com.example.notekanban.Adapter;
 
 import android.content.Context;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -11,7 +12,6 @@ import java.util.List;
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> {
 
     private Context context;
-    private List<>
 
     @NonNull
     @Override
@@ -29,6 +29,9 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
         return 0;
     }
 
-    public class MyViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+        }
     }
 }

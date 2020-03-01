@@ -40,7 +40,7 @@
         android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Masukan Nama"
+        android:hint="Masukan Nama"
         android:padding="10dp"
         android:fontFamily="@font/mlight"
         android:background="@drawable/bg_edittext"
@@ -49,13 +49,13 @@
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <EditText
-        android:id="@+id/edt_password"
+        android:id="@+id/edt_nophone"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Masukan No Telp"
+        android:hint="Masukan No Telp"
         android:padding="10dp"
         android:fontFamily="@font/mlight"
         android:background="@drawable/bg_edittext"
@@ -64,19 +64,19 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_username" />
 
     <EditText
-        android:id="@+id/edt_nophone"
+        android:id="@+id/edt_password"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:inputType="number"
-        android:text="Masukan Password"
+        android:inputType="text"
+        android:hint="Masukan Password"
         android:padding="10dp"
         android:fontFamily="@font/mlight"
         android:background="@drawable/bg_edittext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_nophone" />
 
     <Button
         android:id="@+id/btn_daftar"
@@ -89,6 +89,6 @@
         android:background="@drawable/bg_btn_yellow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_nophone" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
