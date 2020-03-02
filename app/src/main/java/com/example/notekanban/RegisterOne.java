@@ -34,14 +34,22 @@ public class RegisterOne extends AppCompatActivity {
         btnRegist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SQLiteDatabase db = dbHelper.getWritableDatabase();
-                db.execSQL("insert into account values( null, '" +
-                        edt_username.getText().toString()+"','"+
-                        edt_password.getText().toString()+"','"+
-                        edt_nophone.getText().toString() + "')");
-                Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_SHORT).show();
+                try {
+                    SQLiteDatabase db = dbHelper.getWritableDatabase();
+                    db.execSQL("insert into account values( null, '" +
+                            edt_username.getText().toString() + "','" +
+                            edt_password.getText().toString() + "','" +
+                            edt_nophone.getText().toString() + "',null)");
+                    Toast.makeText(getApplicationContext(), "Berhasil", Toast.LENGTH_SHORT).show();
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
 
                 Intent gotoregister2 = new Intent(RegisterOne.this, RegisterTwo.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("username", edt_username.getText().toString());
+                gotoregister2.putExtras(bundle);
                 startActivity(gotoregister2);
             }
         });

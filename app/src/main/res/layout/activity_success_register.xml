@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="73dp"/>
     <TextView
-        android:id="@+id/text_berhasil"
+        android:id="@+id/text_success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Berhasil Mendaftar,"
@@ -28,11 +28,11 @@
         android:textColor="#000"
         android:textSize="26dp"/>
     <TextView
-        android:id="@+id/text_kelola"
+        android:id="@+id/text_tagline_success"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kelola Rencanamu Sekarang !"
-        app:layout_constraintTop_toBottomOf="@id/text_berhasil"
+        app:layout_constraintTop_toBottomOf="@id/text_success"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:fontFamily="@font/montregular"

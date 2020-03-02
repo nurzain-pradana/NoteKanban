@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.notekanban">
+    
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -12,7 +14,6 @@
         <activity android:name=".RegisterTwo" />
         <activity android:name=".RegisterOne" />
         <activity android:name=".LoginScreen" />
-        <activity android:name=".SuccesRegister" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +27,9 @@
         <activity android:name=".KategoriAct" />
         <activity android:name=".ProfilSayaAct"></activity>
         <activity android:name=".HomeScreenActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Theme.AppCompat"/>
     </application>
 
 </manifest>
